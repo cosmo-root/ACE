@@ -8,7 +8,7 @@ The science of studying well is settled: depth first, retrieval over rereading,
 spacing over cramming. The failure point was never knowledge. It is follow
 through. People don't run the method because running it is tedious.
 
-ACE is a bet that the method on rails beats motivation. A harness that carries
+ACE is a bet that a good method with steady enforcement beats motivation. A harness that carries
 the proven shape — learn deep, prove on problems, revisit late — so the learner
 only spends energy on thinking, not on planning what to think about next.
 
