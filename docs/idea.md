@@ -4,39 +4,45 @@ Thinking out loud. Nothing decided.
 
 ## The bet
 
-The science of studying well is settled: depth first, retrieval over rereading,
-spacing over cramming. The failure point was never knowledge. It is follow
-through. People don't run the method because running it is tedious.
+People already use LLMs every day to assist their studying. They ask for
+explanations, ask follow-up questions mid-session, and work through tough
+concepts. That habit already exists for millions of learners. Overcomplicated
+study tools perform worse because they try to do too much at once, and a tool
+does not need to swallow entire courses to be useful. ACE is a study harness
+built around what people already do—just a better implementation of an existing
+workflow.
 
-ACE is a bet that a good method with steady enforcement beats motivation. A harness that carries
-the proven shape — learn deep, prove on problems, revisit late — so the learner
-only spends energy on thinking, not on planning what to think about next.
+The science of studying well is settled: depth first, active retrieval, and
+spacing over time. The hard part is follow-through, because managing that loop
+by hand is tedious. ACE makes following the method the default. It carries the
+proven shape—learn deep, prove on problems, revisit after a delay—so the
+learner can put all their energy into thinking through the material.
 
 ## What it keeps
 
-One running picture of the learner: what they know, how explanations land,
-what they practiced, what passed, what is due for a revisit. Every session
-reads it and picks up exactly where the last one left off. The machinery is
-open. The record is the point.
+One running picture of the learner: what they know, how explanations land, what
+they practiced, what passed, and what is due for a revisit. Every session reads
+it and picks up right where the last one left off. The machinery is open. The
+record is the point.
 
 ## The loop in my head
 
-Check where I stand. Teach the topic at full strength. Work solid problems
-with coaching alongside. Call it done when understanding shows. Revisit later
-to confirm it held. Standard study wisdom, executed without relying on my
-discipline that week.
+Check where I stand. Teach the topic at full strength. Work solid problems with
+coaching alongside. Call it done when understanding shows. Revisit later to
+confirm it held. Standard study wisdom, kept on track by the harness.
 
 ## Rules I'm holding
 
-- Progress means showing understanding, not finishing pages.
-- Keep the material at its level. Help me reach it.
-- Test, don't reread. Revisit, don't cram.
-- Adjust to the person and the starting point.
-- If something counts as learned, the basis should be visible.
+- Progress means showing real understanding of the topic.
+- Keep the material at its true level and help me reach it.
+- Build memory through testing and spaced revisits.
+- Adjust to the person and their starting point.
+- When something counts as learned, the basis should be visible.
 
 ## Where things stand
 
 Chat tutors talk well. File tools summarize well. Courses go deep. Adaptive
-apps adapt to their own subjects. Each is strong at a step. None of them runs
-the full shape end to end with a memory across sessions. That is the opening
-ACE is aimed at. Unproven until built.
+apps adapt to their own subjects. Each is strong at a step. The opening ACE is
+aimed at is running the full study shape end to end with a memory across
+sessions, turning an everyday LLM study habit into a reliable loop. Unproven
+until built.
