@@ -1,48 +1,23 @@
 # ACE idea
 
-Thinking out loud. Nothing decided.
+Early notes. The fuller picture is in the [README](../README.md); the open questions are in [Decisions](decisions.md).
 
 ## The bet
 
-People already use LLMs every day to assist their studying. They ask for
-explanations, ask follow-up questions mid-session, and work through tough
-concepts. That habit already exists for millions of learners. Overcomplicated
-study tools perform worse because they try to do too much at once, and a tool
-does not need to swallow entire courses to be useful. ACE is a study harness
-built around what people already do—just a better implementation of an existing
-workflow.
-
-The science of studying well is settled: depth first, active retrieval, and
-spacing over time. The hard part is follow-through, because managing that loop
-by hand is tedious. ACE makes following the method the default. It carries the
-proven shape—learn deep, prove on problems, revisit after a delay—so the
-learner can put all their energy into thinking through the material.
+Students already use LLMs to study, and that habit already exists for millions of learners. But a clear explanation feels like understanding, and a chatbot has no way to tell the difference: it doesn't know your level, it never checks you, and it never brings you back. The bet is that a harness with memory, holding the depth and running the full loop, turns that everyday habit into lasting learning.
 
 ## What it keeps
 
-One running picture of the learner: what they know, how explanations land, what
-they practiced, what passed, and what is due for a revisit. Every session reads
-it and picks up right where the last one left off. The machinery is open. The
-record is the point.
+One running picture of the learner per topic: what they know, what they practiced, what passed, and what is due for a revisit. Every session reads it and picks up where the last one left off. The record is the point.
 
-## The loop in my head
+## The loop
 
-Check where I stand. Teach the topic at full strength. Work solid problems with
-coaching alongside. Call it done when understanding shows. Revisit later to
-confirm it held. Standard study wisdom, kept on track by the harness.
+Say what you want to study. Get a short lesson calibrated to you. Work real problems. Pass a visible bar. Come back after a delay and prove it again. Standard study wisdom, kept on track by the harness. See [Learning loop](learning-loop.md).
 
-## Rules I'm holding
+## What it is not
 
-- Progress means showing real understanding of the topic.
-- Keep the material at its true level and help me reach it.
-- Build memory through testing and spaced revisits.
-- Adjust to the person and their starting point.
-- When something counts as learned, the basis should be visible.
+Not a general chatbot, not a course platform, not something that swallows whole courses, not gamified. You bring the topic; ACE keeps the order and the standard steady.
 
 ## Where things stand
 
-Chat tutors talk well. File tools summarize well. Courses go deep. Adaptive
-apps adapt to their own subjects. Each is strong at a step. The opening ACE is
-aimed at is running the full study shape end to end with a memory across
-sessions, turning an everyday LLM study habit into a reliable loop. Unproven
-until built.
+Chat tutors explain well. File tools summarize well. Courses go deep. Adaptive apps adapt to their own subjects. The opening is the full loop with memory across sessions. Unproven until built.
