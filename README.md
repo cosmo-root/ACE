@@ -40,6 +40,27 @@ Anyone who uses an LLM to help them learn, which is most students.
 - Not something that swallows whole courses at once. It stays on the work in front of you.
 - Not a gamified app. No streaks or points to keep you hooked.
 
+## Run it
+
+No API keys, database, or network needed (in-memory seed data, mock LLM provider).
+
+```sh
+# from the ACE/ workspace root (local `app/` maps to the GitHub repo root;
+# on GitHub, run from the repo root instead)
+cd app
+npm install --ignore-scripts
+npm run dev     # http://localhost:3000
+```
+
+Other commands: `npm test`, `npm run typecheck`, `npm run lint`,
+`npm run build` + `npm run start`, `npm run db:generate` (writes
+`drizzle/`, offline), `npm run smoke` (build + prod + full HTTP check).
+
+To try the AI plumbing against a real OpenAI-compatible endpoint, copy
+`.env.example` to `.env` and set `LLM_BASE_URL`, `LLM_API_KEY`,
+`LLM_MODEL`. The harness is plumbing only — you own prompt design (see
+`ARCHITECTURE.md` HUMAN TODO).
+
 ## First demo
 
 The first demo is one full pass through the loop for a single topic: you name a topic, get a calibrated short lesson, work through problems, are scored against a rubric, and see a scheduled revisit. Everything else builds on that.
@@ -56,8 +77,24 @@ The first demo is one full pass through the loop for a single topic: you name a 
 
 ## Stack
 
-Built on Meta's models: lessons and grading through the Meta Model API, with open-weights models for lighter turns. The app itself is probably a web app. Other candidates are in [Decisions](docs/decisions.md).
+Next.js App Router + TypeScript (strict), Zod, Drizzle ORM (Postgres,
+Supabase-compatible), unified/remark/rehype markdown pipeline, Vitest,
+ESLint. Server components by default; client components only where
+interactivity requires it. No CSS, no component library. See
+[DEPENDENCIES.md](DEPENDENCIES.md) for every package choice and
+[ARCHITECTURE.md](ARCHITECTURE.md) for the module map.
+
+Lessons and grading will run through the Meta Model API (OpenAI-compatible
+provider, Phase 2 plumbing); the app itself needs no API keys to run.
 
 ## Status
 
-Early stage. The design is documented in `docs/`, and there is no working prototype yet.
+Working skeleton (overnight build, 2026-10-26): topic list + creation, server-rendered
+lessons (GFM, KaTeX math, highlighted code, Obsidian callouts, wikilinks,
+Mermaid diagrams, function plots, `toc` tables of contents), playground
+with live preview, wikilink topic graph, Ctrl+K quick switcher + j/k
+list navigation, cached server rendering, in-memory store + seed,
+Drizzle schema + migrations, harness plumbing only (mock +
+OpenAI-compatible providers, validated routes).
+No AI learning logic yet — prompts/scheduling/pass rules are the user's
+design space. See [SUMMARY.md](SUMMARY.md).
